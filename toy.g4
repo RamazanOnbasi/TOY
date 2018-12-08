@@ -1,6 +1,6 @@
 grammar toy;
 
-program		:		'BEGIN' stmts+ 'END'; 
+program		:		'BEGIN' stmts+ 'END';
 stmts		:		stmt+;
 stmt		:		assign | print_stmt;
 assign		:		ID ':=' expr ';';
@@ -15,6 +15,7 @@ expr		:		<assoc=left> '(' expr ')'
 		|		<assoc=left> ID
 		|		<assoc=left> INT
 				;
+
 
 print_stmt	:		'PRINT' (ID | INT | expr) ';';
 
