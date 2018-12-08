@@ -16,7 +16,7 @@ Important properties of the TOY language are:
 •	All the operators have left-associativity, except the exponentiation operator which has right- associativity.  
   
   
-![alt text](https://i.imgur.com/Bh3DrBx.jpg  
+![alt text](https://i.imgur.com/Bh3DrBx.jpg)  
   
 ![alt text](https://i.imgur.com/9pVhQWT.jpg)  
   
