@@ -6,15 +6,15 @@ stmt		:		assign | print_stmt;
 assign		:		ID ':=' expr ';';
 					
 expr		:		<assoc=left> '(' expr ')'
-			|		<assoc=right> expr '^' expr
-			|		<assoc=left> expr ('*' | '/') expr
-			|		<assoc=left> expr ('+' | '-') expr
-			|		<assoc=left> expr ('<' | '>' | '<=' | '>=' | '==' | '!=') expr
-			|		<assoc=left> expr '&&' expr
-			|		<assoc=left> expr '||' expr
-			|		<assoc=left> ID
-			|		<assoc=left> INT
-					;
+		|		<assoc=right> expr '^' expr
+		|		<assoc=left> expr ('*' | '/') expr
+		|		<assoc=left> expr ('+' | '-') expr
+		|		<assoc=left> expr ('<' | '>' | '<=' | '>=' | '==' | '!=') expr
+		|		<assoc=left> expr '&&' expr
+		|		<assoc=left> expr '||' expr
+		|		<assoc=left> ID
+		|		<assoc=left> INT
+				;
 
 print_stmt	:		'PRINT' (ID | INT | expr) ';';
 
