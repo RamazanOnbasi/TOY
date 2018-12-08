@@ -4,8 +4,8 @@ This grammar is for an imaginary programming language called “TOY” that only
 
 Important properties of the TOY language are:
 
-•	A program starts with a “BEGIN” word and ends with an “END” word.
-•	Between BEGIN and END words, zero or more statements can be written.
+•	A program starts with a “BEGIN” word and ends with an “END” word.  
+•	Between BEGIN and END words, zero or more statements can be written.  
 •	Each statement in this language ends with a semicolon.
 •	Identifiers must start with a letter and can contain any number of letters and digits.
 •	There are two kinds of statements: Print statements and assignment statements.
